@@ -1,0 +1,25 @@
+WebCreatio Installation
+-----------------------
+
+1. Download WebCreatio 
+You can clone git repository of WebCreatio from
+
+	git://github.com/wajrou/webcreatio.git
+
+or download latest version from project page at github.com from
+
+	http://github.com/wajrou/webcreatio
+
+Just click on (download) button and choose your prefered archive. Save file
+and extract it to DocumentRoot of your running Apache webserver with PHP.
+
+2. Download Nette framework
+You need to download your own copy of Nette (http://nettephp.com/) too.
+If you don't know which version is best then try
+
+	http://download.nettephp.com/nette-0.9.1-PHP-5.2.zip
+
+Extract Nette/ or Nette.minified/ subfolder from archive to /libs/ folder
+of WebCreatio.
+
+3. Try to visit index page of WebCreatio in your browser.
