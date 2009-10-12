@@ -1,0 +1,17 @@
+# Gettext keys exported by GettextExtractor
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Default.default.phtml:5
+msgid "Hello"
+msgstr "Ahoj"
+
+# Default.default.phtml:0
+msgid "WebCreatio is back"
+msgstr "WebCreatio je zpět"
+
+# Default.default.phtml:6
+msgid "my name is wajrou"
+msgstr "jmenuji se wajrou"
