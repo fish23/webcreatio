@@ -1,0 +1,9 @@
+# Gettext keys exported by GettextExtractor
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Default.default.phtml:8
+msgid "Hello"
+msgstr "Hello"
