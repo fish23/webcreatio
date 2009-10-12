@@ -1,5 +1,5 @@
-WebCreatio Installation
------------------------
+How to install WebCreatio
+-------------------------
 
 1. Download WebCreatio 
 You can clone git repository of WebCreatio from
