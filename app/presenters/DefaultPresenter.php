@@ -1,4 +1,4 @@
 <?php
 
-class DefaultPresenter extends Presenter {
+class DefaultPresenter extends BasePresenter {
 }
