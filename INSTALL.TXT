@@ -1,5 +1,6 @@
 How to install WebCreatio
 -------------------------
+Requirements: Web server, PHP 5.2 or newer
 
 1. Download WebCreatio 
 You can clone git repository of WebCreatio from
@@ -13,13 +14,41 @@ or download latest version from project page at github.com from
 Just click on (download) button and choose your prefered archive. Save file
 and extract it to DocumentRoot of your running Apache webserver with PHP.
 
+
 2. Download Nette framework
-You need to download your own copy of Nette (http://nettephp.com/) too.
-If you don't know which version is best then try
+You need to download your own copy of Nette (http://nettephp.com) too.
+If you don't know which version is best for your purposes then use last stable.
 
 	http://download.nettephp.com/nette-0.9.1-PHP-5.2.zip
 
 Extract Nette/ or Nette.minified/ subfolder from archive to /libs/ folder
 of WebCreatio.
 
-3. Try to visit index page of WebCreatio in your browser.
+3. Download dibi
+You need to download your own copy of dibi (http://dibiphp.com) too.
+If you don't know which version is best for your purposes then use last stable.
+
+	http://download.dibiphp.com/dibi-1.2.zip
+
+4. Try to visit index page of WebCreatio in your browser.
+
+
+
+How to install automatic updates
+--------------------------------
+Requirements (for half-automatic updates): cron, git
+Requirements (for full-automatic updates): cron, git, wget
+
+1. Copy /webcreatio-update to secure directory OUT OF PHP ACCESS!
+
+2. Add next line to your crontab file and edit paths
+
+*/15 * * * * /home/webcreatio/webcreatio-update /var/www/html/webcreatio/
+
+Now you got half-automatic updates. Just visit your webcreatio/update.php
+to mark your web for update and webcreatio-update calls git pull.
+
+3. If you want full-automatic updates every day then add next line
+to your crontab and edit URLofWebcreatio
+
+2 * * * * wget URLofWebcreatio/update.php 1>/dev/null 2>/dev/null

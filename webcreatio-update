@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Check if param was given or set it to current directory
+if [ ! -z "$1" ]; then
+	WCDIR="$1"
+else
+	WCDIR="`pwd`"
+fi
+
+# Check path to webcreatio
+if [ -d "$WCDIR" -a -f "$WCDIR/document_root/index.php" ]; then
+
+	if [ -f "$WCDIR/app/temp/_update" ]; then
+        	# Unmark update
+        	rm -f "$WCDIR/app/temp/_update"
+
+        	cd "$WCDIR"
+        	git pull
+        	echo "Web is up-to-date now."
+	fi
+
+else
+        echo "usage: $0 [/path/to/webcreatio]"
+fi
