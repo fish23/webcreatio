@@ -4,13 +4,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <title>{$title}</title>
-<link rel="stylesheet" type="text/css" href="{$baseUri}css/default.css" />
 <meta name="author" content="Tomas Goldir - tomas.goldir@gmail.com" />
+<link rel="stylesheet" type="text/css" href="{$baseUri}css/screen.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.nette.js"></script>
 </head>
 
 <body>
+<div class="container">
+	<div class="navigation">
+		<a href="{link Default:default}">Back to mainpage</a>
+	</div>
+
+	<h1>{$title}</h1>
+
+{snippet}
 <?php /* $content->render(); // nette-0.8 */ ?>
 {include $content}
+{/snippet}
+</div>
 </body>
 
 </html>
