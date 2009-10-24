@@ -18,5 +18,5 @@ Options -Indexes
 	# front controller
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule !\.(pdf|js|ico|gif|jpg|png|css|rar|zip|tar\.gz)$ index.php [L]
+	RewriteRule !\.(css|js|ico|gif|jpg|png|pdf|ogg|mp3|mp4|x3d|gz|bz2|zip|rar)$ index.php [L]
 </IfModule>
