@@ -68,7 +68,7 @@ $session->setCookieParams('/');
 $application = Environment::getApplication();
 // Setup front controller
 $application->errorPresenter = 'Error';
-$application->catchExceptions = TRUE;
+//$application->catchExceptions = TRUE;
 
 
 /**
