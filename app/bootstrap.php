@@ -39,6 +39,7 @@ Debug::enable(NULL, APP_DIR . '/log/php_error.log');
 
 // Load configuration from config.ini file
 Environment::loadConfig();
+dibi::connect(Environment::getConfig('database'));
 
 // Check if directory /app/temp is writable
 if (@file_put_contents(Environment::expand('%tempDir%/_check'), '') === FALSE) {
