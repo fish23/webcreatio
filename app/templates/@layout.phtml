@@ -6,22 +6,33 @@
 <title>{$title}</title>
 <meta name="author" content="Tomas Goldir - tomas.goldir@gmail.com" />
 <link rel="stylesheet" type="text/css" href="{$baseUri}css/screen.css" />
-<script type="text/javascript" src="js/jquery.js"></script>
+<script src="http://www.google.com/jsapi"></script>
+<script>google.load("jquery", "1.3.2")</script>
+<script src="js/jquery.corners.min.js"></script>
+<script><!--
+$(document).ready(function() {
+	$(".container").corners('10px');
+});
+--></script>
 <script type="text/javascript" src="js/jquery.nette.js"></script>
 </head>
 
 <body>
 <div class="container">
+	{ifCurrent Default:default}{else}
 	<div class="navigation">
 		<a href="{link Default:default}">Back to mainpage</a>
 	</div>
+	{/if}
 
 	<h1>{$title}</h1>
 
-{snippet}
-<?php /* $content->render(); // nette-0.8 */ ?>
-{include $content}
-{/snippet}
+	<div class="content">
+	{snippet}
+	<?php /* $content->render(); // nette-0.8 */ ?>
+	{include $content}
+	{/snippet}
+	</div>
 </div>
 </body>
 
