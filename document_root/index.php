@@ -18,4 +18,4 @@ require APP_DIR . '/bootstrap.php';
 
 // print running time of application (in miliseconds) within html comment
 list($usec, $sec) = explode(' ', microtime());
-echo('<!-- running time: '.round(((float) $sec + (float) $usec - $mtime_start) * 1000, 3).' ms -->');
+Debug::fireLog('running time: '.round(((float) $sec + (float) $usec - $mtime_start) * 1000, 3).' ms');
