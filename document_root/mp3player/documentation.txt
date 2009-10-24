@@ -1,0 +1,68 @@
+http://flash-mp3-player.net/players/multi/documentation/
+
+Documentation
+
+=== Example
+Here is an example of HTML usage of the player:
+
+<object type="application/x-shockwave-flash" data="player_mp3_multi.swf" width="200" height="20">
+     <param name="movie" value="player_mp3_multi.swf" />
+     <param name="FlashVars" value="mp3=test.mp3|test2.mp3" />
+</object>
+
+=== Parameters
+Name	Description
+Parameter name	Parameter description
+mp3 	The URLs of the files to be played, separated by |.
+config 	The URL of the configuration text file, similar to config_multi.txt
+configxml 	The URL of the configuration XML file, similar to config_multi.xml
+title 	Titles, separated by |
+playlist 	The text file to load. Each line cantains the url of the mp3. You can add the title after a | on the same line.
+width 	Forces the video width.
+height 	Forces the video height.
+volume 	The initial volume, between 0 and 200.
+showlist 	0 to hide the playlist.
+showvolume 	1 to show the VOLUME button.
+showinfo 	1 to show the INFO button.
+autoplay 	1 to auto-play
+loop 	1 to loop.
+shuffle 	1 to shuffle, 2 for a clever random.
+skin 	The URL of the JPEG file (not progressive) to load
+loadingcolor 	The color of loading bar
+bgcolor1 	The first color of the background gradient
+bgcolor2 	The second color of the background gradient
+buttoncolor 	The color of the buttons
+buttonovercolor 	Hover color of buttons
+slidercolor1 	The first color of the bar gradient
+slidercolor2 	The second color of the bar gradient
+sliderovercolor 	Hover color of the bar
+textcolor 	The text color.
+bgcolor 	The background color
+playlistcolor 	The playlist background color.
+playlistalpha 	The playlist background transparency, between 0 and 100. By default set to 50.
+currentmp3color 	The color of the selected track.
+scrollbarcolor 	The color of the scrollbar.
+scrollbarovercolor 	Hover color of the scrollbar.
+buttonwidth 	The buttons width. By default set to 26.
+sliderwidth 	The slider width. By default set to 20.
+sliderheight 	The slider height. By default set to 10.
+volumewidth 	The width of the VOLUME button. By default set to 30.
+volumeheight 	The height of the VOLUME button. By default set to 6
+showslider 	0 to hide the player bar.
+showloading 	Loading bar display mode : autohide, always or never.
+playlistrss 	The RSS url with mp3 enclosures.
+showplaylistnumbers 	0 to hide numbers in the playlist.
+
+=== Keyboard shortcuts
+Key	Description
+Key	Description
+space 	Play/Pause
+P 	Play/Pause
+S 	Stop
+I 	Show informations
+left 	5 seconds backward
+right 	5 seconds forward
+up 	Next track
+down 	Previous track
++ 	Volume up
+- 	Volume down

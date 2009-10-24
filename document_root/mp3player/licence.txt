@@ -1,0 +1,5 @@
+http://flash-mp3-player.net/players/multi/license/
+
+=== License
+The player is under the Creative Commons BY SA and MPL 1.1 license.
+You can use the player without citing the author.
