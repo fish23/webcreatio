@@ -22,5 +22,7 @@ abstract class BasePresenter extends Presenter
 		$translator = new Translator(
 			Environment::getVariable('lang'), APP_DIR . '/locale');
 		$this->template->setTranslator($translator);
+
+		$this->template->user = Environment::getUser();
 	}
 }
