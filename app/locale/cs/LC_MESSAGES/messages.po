@@ -4,14 +4,66 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# Default.default.phtml:5
-msgid "Hello"
-msgstr "Ahoj"
+# Default.default.phtml:1
+msgid "Actions"
+msgstr "Akce"
 
-# Default.default.phtml:0
-msgid "WebCreatio is back"
-msgstr "WebCreatio je zpět"
+# Default.default.phtml:10
+msgid "Activation"
+msgstr "Aktivace"
+
+# Default.default.phtml:12
+msgid "Browsers"
+msgstr "Prohlížeče"
+
+# Default.default.phtml:12
+msgid "Database"
+msgstr "Databáze"
+
+# Default.default.phtml:14
+msgid "Editors"
+msgstr "Editory"
+
+# Default.default.phtml:16
+msgid "Examples"
+msgstr "Příklady"
+
+# Default.default.phtml:11
+msgid "Forgotten password"
+msgstr "Zapomenuté heslo"
 
 # Default.default.phtml:6
-msgid "my name is wajrou"
-msgstr "jmenuji se wajrou"
+msgid "Login"
+msgstr "Přihlásit"
+
+# Default.default.phtml:7
+msgid "Logout"
+msgstr "Odhlásit"
+
+# Default.default.phtml:3
+msgid "MP3 Player"
+msgstr "MP3 přehrávač"
+
+# Default.default.phtml:27
+msgid "Operating system"
+msgstr "Operační systém"
+
+# Default.default.phtml:8
+msgid "Profile"
+msgstr "Profil"
+
+# Default.default.phtml:9
+msgid "Register"
+msgstr "Registrovat"
+
+# Default.default.phtml:25
+msgid "Requirements"
+msgstr "Požadavky"
+
+# Default.default.phtml:6
+msgid "User"
+msgstr "Uživatel"
+
+# Default.default.phtml:3
+msgid "Widgets"
+msgstr "Widgety"

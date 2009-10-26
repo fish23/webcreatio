@@ -8,62 +8,66 @@ msgstr ""
 msgid "Actions"
 msgstr "Actions"
 
-# Default.default.phtml:10
+# Default.default.phtml:7
 msgid "Activation"
 msgstr "Activation"
 
-# Default.default.phtml:12
+# Default.default.phtml:10
 msgid "Browsers"
 msgstr "Browsers"
 
-# Default.default.phtml:12
+# Default.default.phtml:10
 msgid "Database"
 msgstr "Database"
 
-# Default.default.phtml:14
+# Default.default.phtml:13
 msgid "Editors"
 msgstr "Editors"
 
-# Default.default.phtml:16
+# Default.default.phtml:18
 msgid "Examples"
 msgstr "Examples"
 
-# Default.default.phtml:11
+# Default.default.phtml:8
 msgid "Forgotten password"
 msgstr "Forgotten password"
 
-# Default.default.phtml:6
+# Default.default.phtml:3
 msgid "Login"
 msgstr "Login"
 
-# Default.default.phtml:7
+# Default.default.phtml:4
 msgid "Logout"
 msgstr "Logout"
 
-# Default.default.phtml:3
+# Default.default.phtml:15
 msgid "MP3 Player"
 msgstr "MP3 Player"
 
-# Default.default.phtml:27
+# Default.default.phtml:31
 msgid "Operating system"
 msgstr "Operating system"
 
-# Default.default.phtml:8
+# Default.default.phtml:5
 msgid "Profile"
 msgstr "Profile"
 
-# Default.default.phtml:9
+# Default.default.phtml:6
 msgid "Register"
 msgstr "Register"
 
-# Default.default.phtml:25
+# Default.default.phtml:29
 msgid "Requirements"
 msgstr "Requirements"
 
-# Default.default.phtml:6
+# Default.default.phtml:3
 msgid "User"
 msgstr "User"
 
-# Default.default.phtml:3
+# Default.default.phtml:40
+msgid "Version"
+msgstr "Version"
+
+# Default.default.phtml:15
 msgid "Widgets"
 msgstr "Widgets"
