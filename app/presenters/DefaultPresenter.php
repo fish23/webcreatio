@@ -2,7 +2,13 @@
 
 class DefaultPresenter extends BasePresenter
 {
-	public function renderDefault() {
+	public function renderDefault()
+	{
 		$this->template->title = 'WebCreatio';
 	}	
+
+	public function renderLoremIpsum()
+	{
+		$this->template->title = 'Lorem ipsum';
+	}
 }
