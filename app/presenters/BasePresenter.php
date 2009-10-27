@@ -14,7 +14,7 @@ abstract class BasePresenter extends Presenter
 		// nette-0.9 registers CurlyBracketsFilter automaticaly
 		//$this->template->registerFilter('CurlyBracketsFilter::invoke');	// nette-0.8 requires CurlyBracketFilter explicitly
 
-		$translator = new Translator;
+		$translator = new DbTranslator;
 		$this->template->setTranslator($translator);
 
 		$this->template->user = Environment::getUser();

@@ -2,22 +2,12 @@
 
 class Translator implements ITranslator
 {
-	public $defaultDirectory = '%appDir%/locale';
-
-	public $countRegexp = '#\%([0-9]+\$)*d#';
-
-	public $paramsRegexp = '#\%([0-9]+\$)*[fs]#';
-	
 
 
 	/**
-	 * Gets the Gettext ready
-	 *
-	 * @param string $locale
-	 * @param string $directory
-	 * @param string $domain
+	 * detect lang
 	 */
-	public function __construct($locale = NULL, $directory = NULL, $domain = 'messages')
+	public function __construct()
 	{
 		// autodetection of language by browser settings
 		if ($locale === NULL) {
@@ -31,16 +21,6 @@ class Translator implements ITranslator
 		}
 		putenv("LANG=$locale");
 		setlocale(LC_ALL, $locale);
-
-		// use default directory if directory wasn't specified
-		if ($directory === NULL)
-			$directory = Environment::expand($this->defaultDirectory);
-
-		// language pack path: $directory/$locale/LC_$domain/$domain.mo
-		// example: app/locale/cs/LC_MESSAGES/messages.mo
-		bindtextdomain($domain, $directory);
-		textdomain($domain);
-		bind_textdomain_codeset($domain, 'UTF-8');
 	}
 
 
@@ -53,8 +33,7 @@ class Translator implements ITranslator
 	 */
 	public function translate($message, $count = NULL)
 	{
-		$pars = func_get_args();
-
+		Environment::setVariable('lang', $locale);
 		if (!preg_match($this->countRegexp, $message)) {                
 			$message = gettext($message);
 		} else {
