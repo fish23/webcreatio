@@ -1,6 +1,6 @@
 <?php
 
-class Translator implements ITranslator
+class DbTranslator implements ITranslator
 {
 
 
@@ -17,6 +17,7 @@ class Translator implements ITranslator
 				default:
 				case 'en': $locale = 'en_US'; break;
 			}
+      $locale = 'cs';
 			Environment::setVariable('lang', $locale);
 		}
 		putenv("LANG=$locale");
@@ -31,26 +32,11 @@ class Translator implements ITranslator
 	 * @param  int      count
 	 * @return string
 	 */
-	public function translate($message, $count = NULL)
+	public function translate($message, $count = 0)
 	{
-		Environment::setVariable('lang', $locale);
-		if (!preg_match($this->countRegexp, $message)) {                
-			$message = gettext($message);
-		} else {
-			$split = preg_split($this->countRegexp, $message);
-			$n = preg_match($this->paramsRegexp, $split[0]);
-		  
-			if (!isset($pars[$n+1]))
-				throw new InvalidArgumentException('Insufficient number of arguments in translate function');
-		  
-			$message = ngettext($message, $message, $pars[$n+1]);
-		}
-	    
-		if (count($pars)>1) {
-			array_shift($pars);
-			return vsprintf($message, $pars); // parametrizovane preklady zatim nefunguji
-		}
+    $table = ':wc:messages_'.Environment::getVariable('lang');
+		$result = dibi::fetch('SELECT * FROM :wc:messages LEFT JOIN '.$table.' ON :wc:messages.id = '.$table.'.id AND '.$table.'.num <= %i', $count);
 
-		return $message;   
+		return $result;   
 	}
 }
